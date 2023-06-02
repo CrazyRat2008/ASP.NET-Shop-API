@@ -36,7 +36,8 @@ namespace WebApplication1.Controllers
                 FirstName = model.FirstName,
                 LastName = model.LastName,
                 Email = model.Email,
-                UserName = model.Email
+                UserName = model.Email,
+                Image = imageName
             };
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
